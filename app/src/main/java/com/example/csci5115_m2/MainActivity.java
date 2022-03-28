@@ -9,6 +9,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import android.os.*;
+import android.content.Intent;
 
 import com.example.csci5115_m2.databinding.ActivityMainBinding;
 
@@ -22,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Handler().postDelayed({
+                val intent = Intent(this@MainActivity,HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        },3000);
+
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
