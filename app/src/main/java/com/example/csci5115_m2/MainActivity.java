@@ -25,11 +25,23 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Handler().postDelayed({
-                val intent = Intent(this@MainActivity,HomeActivity::class.java)
-            startActivity(intent)
-            finish()
-        },3000);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                //This method will be executed once the timer is over
+//                // Start your app main activity
+//                Intent i = new Intent(MainActivity.this, MainActivity.class);
+//                startActivity(i);
+//                // close this activity
+//                finish();
+//            }
+//        }, 3000);
+
+//        new Handler().postDelayed({
+//                Intent meow = new Intent(HomeActivity.this,MainActivity.class)
+//                startActivity(meow);
+//                finish()
+//            },3000);
 
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
