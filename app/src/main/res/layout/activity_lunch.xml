@@ -7,7 +7,7 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
     <RelativeLayout
-        android:id="@+id/oatmealContainer"
+        android:id="@+id/sandwichContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="292dp"
@@ -18,18 +18,18 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/oatmealView"
+            android:id="@+id/sandwichView"
             android:layout_width="120dp"
             android:layout_height="90dp"
-            android:background="@drawable/oatmeal"
+            android:background="@drawable/bacongrilledcheese"
             android:padding="4dp" />
 
         <TextView
-            android:id="@+id/oatmealTitle"
+            android:id="@+id/sandwichTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/oatmealView"
+            android:layout_toRightOf="@id/sandwichView"
             android:text="Parfait"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="#000000"
@@ -39,11 +39,11 @@
             android:id="@+id/oatmealShortDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/oatmealTitle"
+            android:layout_below="@id/sandwichTitle"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/oatmealView"
-            android:text="Steel cut oats with fruit"
+            android:layout_toRightOf="@id/sandwichView"
+            android:text="Bacon/melted cheese/buttery toasted bread"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
         <TextView
@@ -53,7 +53,7 @@
             android:layout_below="@id/oatmealShortDesc"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/oatmealView"
+            android:layout_toRightOf="@id/sandwichView"
             android:paddingRight="15dp"
             android:text="$"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
@@ -62,52 +62,52 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/omeletteContainer"
+        android:id="@+id/stirFryContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/parfaitContainer">
+        app:layout_constraintTop_toBottomOf="@+id/HummusBowlContainer">
 
         <ImageView
-            android:id="@+id/omeletteView"
+            android:id="@+id/stirFryView"
             android:layout_width="120dp"
             android:layout_height="90dp"
-            android:background="@drawable/omelette"
+            android:background="@drawable/stirfry"
             android:padding="4dp" />
 
         <TextView
-            android:id="@+id/omeletteTitle"
+            android:id="@+id/stirFryTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/omeletteView"
+            android:layout_toRightOf="@id/stirFryView"
             android:text="Omelette"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/omeletteShortDesc"
+            android:id="@+id/stirFryShortDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/omeletteTitle"
+            android:layout_below="@id/stirFryTitle"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/omeletteView"
-            android:text="Chicken omelet with vegetables"
+            android:layout_toRightOf="@id/stirFryView"
+            android:text="Glass noodles/veggies/sesame sauce"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
         <TextView
-            android:id="@+id/omeletteAdditionalInfo"
+            android:id="@+id/stirFryAdditionalInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/omeletteShortDesc"
+            android:layout_below="@id/stirFryShortDesc"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/omeletteView"
+            android:layout_toRightOf="@id/stirFryView"
             android:paddingRight="15dp"
             android:text="$"
             android:textColor="@color/green"
@@ -134,7 +134,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
         android:text="Breakfast"
-        android:backgroundTint="@color/light_green"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -145,7 +144,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
         android:text="Lunch"
-        android:onClick="goToLunchPage"
+        android:backgroundTint="@color/light_green"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -170,7 +169,7 @@
     </androidx.cardview.widget.CardView>
 
     <RelativeLayout
-        android:id="@+id/parfaitContainer"
+        android:id="@+id/HummusBowlContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -181,42 +180,42 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/parfaitView"
+            android:id="@+id/HummusBowlView"
             android:layout_width="120dp"
             android:layout_height="90dp"
-            android:background="@drawable/parfait"
+            android:background="@drawable/hummusbowl"
             android:padding="4dp" />
 
         <TextView
-            android:id="@+id/parfaitTitle"
+            android:id="@+id/HummusBowlTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/parfaitView"
+            android:layout_toRightOf="@id/HummusBowlView"
             android:text="Parfait"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/parfaitShortDesc"
+            android:id="@+id/HummusBowlShortDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/parfaitTitle"
+            android:layout_below="@id/HummusBowlTitle"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/parfaitView"
-            android:text="Yogurt/granola/fruit bowl"
+            android:layout_toRightOf="@id/HummusBowlView"
+            android:text="Hummus/veggies/pita wedges"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
         <TextView
-            android:id="@+id/parfaitAdditionalInfo"
+            android:id="@+id/HummusBowlAdditionalInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/parfaitShortDesc"
+            android:layout_below="@id/HummusBowlShortDesc"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/parfaitView"
+            android:layout_toRightOf="@id/HummusBowlView"
             android:paddingRight="15dp"
             android:text="$"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"

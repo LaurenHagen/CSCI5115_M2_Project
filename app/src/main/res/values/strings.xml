@@ -2,4 +2,5 @@
     <string name="app_name">CSCI5115_M2</string>
     <string name="title_home">Your Calendar</string>
     <string name="title_dashboard">Recipes</string>
+    <string name="title_activity_lunch">lunch</string>
 </resources>
