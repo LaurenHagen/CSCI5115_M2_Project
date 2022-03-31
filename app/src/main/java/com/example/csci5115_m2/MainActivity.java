@@ -10,6 +10,20 @@
 
 //overall, i think our general problem is that the splash screen has to be in a different java file that is either
 //MaiActivity OR SplashActivity, which contains logic for the splash screen. then THIS PART
+//                                                                                VVVVVV
+//handler=new Handler();                                                         VVVV
+//        handler.postDelayed(new Runnable() {                                  VV
+//            @Override                                                         V
+//            public void run() {                                  VVVVVVVVVVVVVVVVV
+//                Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        },3000);
+
+//needs to be the java file which contains all the code that is currently present in the main branch, in MainActivity
+
+// P.S. this has been my favorite tutorial so far: https://www.youtube.com/watch?v=8rMYrJBV0Xw
 
 package com.example.csci5115_m2;
 
