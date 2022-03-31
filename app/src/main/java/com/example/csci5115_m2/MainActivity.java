@@ -1,3 +1,21 @@
+//this is where i try moving everything from MainActivity to NextActivity, and rewriting main activity to just be the splash screen that THEN
+//goes to NextActivity which should contain code for the rest of the app
+//I suspect that the code block:
+
+//@Override
+//protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+
+//is what is responsible for making that specific java file the one that starts on launch.
+
+//overall, i think our general problem is that the splash screen has to be in a different java file that is either
+//MaiActivity OR SplashActivity, which contains logic for the splash screen. then THIS PART
+//                                                                                VVVVVVV
+
+
+
+
+
 package com.example.csci5115_m2;
 
 import android.os.Bundle;
