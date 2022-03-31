@@ -10,11 +10,6 @@
 
 //overall, i think our general problem is that the splash screen has to be in a different java file that is either
 //MaiActivity OR SplashActivity, which contains logic for the splash screen. then THIS PART
-//                                                                                VVVVVVV
-
-
-
-
 
 package com.example.csci5115_m2;
 
