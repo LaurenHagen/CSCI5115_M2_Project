@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSCI5115_M2">
-        <activity
-            android:name=".ui.SplashActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".SplashActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".SplashActivity"
             android:exported="true"

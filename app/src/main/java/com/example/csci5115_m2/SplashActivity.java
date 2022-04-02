@@ -1,6 +1,5 @@
-package com.example.csci5115_m2.ui;
+package com.example.csci5115_m2;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
