@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CSCI5115_M2</string>
+    <string name="app_name">Welcome to Prep Pal!</string>
     <string name="title_home">Your Calendar</string>
     <string name="title_dashboard">Recipes</string>
 </resources>
